@@ -1,0 +1,91 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="ar.enigmatic.travel_helper_app_a2_v1.country_informations"
+    android:id="@+id/country_informations_fragment"
+    android:background="@color/colorWhite"
+
+    >
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:textAlignment="center"
+            >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/country_name"
+            android:textColor="@color/colorDarkGrey"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/city_name"
+            android:textColor="@color/colorDarkGrey"
+            android:textAlignment="center"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+            android:textStyle="bold"
+            />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/hotel_name"
+                android:textColor="@color/colorDarkGrey"
+
+                android:textAlignment="center"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                android:textStyle="bold" />
+
+
+
+        <ImageView
+            android:id="@+id/flag"
+            android:layout_width="match_parent"
+            android:layout_height="225dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center|bottom"
+            android:layout_alignParentBottom="true"
+
+            >
+
+            <Button
+                android:id="@+id/calc_cost_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|center"
+                android:text="Calculate costs"
+                style="?android:attr/buttonStyleSmall"
+                />
+
+            <Button
+                android:id="@+id/edit_country_btn"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="145dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|center"
+                android:text="Edit country" />
+
+
+        </LinearLayout>
+
+
+
+
+</RelativeLayout>

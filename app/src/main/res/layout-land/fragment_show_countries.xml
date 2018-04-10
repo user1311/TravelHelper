@@ -1,0 +1,70 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="ar.enigmatic.travel_helper_app_a2_v1.show_countries"
+    android:id="@+id/fragment_sc_frame"
+    android:background="@drawable/background"
+
+    >
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Select country: "
+        android:textStyle="bold"
+        android:textColor="@color/colorWhite"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+        android:id="@+id/select_txt"
+        android:textAlignment="center"
+
+
+        />
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_below="@id/select_txt"
+        >
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/listView_countries"
+
+            android:layout_below="@+id/select_txt"
+            android:layout_margin="10dp"
+            ></ListView>
+
+    </FrameLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center|bottom"
+        android:layout_alignParentBottom="true"
+        >
+        <Button
+            android:id="@+id/add_country_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|center"
+            android:text="Add country"
+
+            />
+
+
+    </LinearLayout>
+
+
+
+
+
+</ScrollView>

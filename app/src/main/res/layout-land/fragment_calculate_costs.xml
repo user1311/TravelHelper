@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:layout_editor_absoluteY="73dp">
+
+    <android.support.constraint.Guideline
+        android:id="@+id/horizontalFirst"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.25" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/horizontalSecond"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.65" />
+
+    <TextView
+        android:id="@+id/currencyTxt"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@+id/dayNumber"
+        app:layout_constraintLeft_toRightOf="@+id/verticalFirst"
+        app:layout_constraintRight_toLeftOf="@+id/verticalSecond"
+        app:layout_constraintTop_toBottomOf="@+id/horizontalFirst" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="-5dp"
+        android:layout_marginLeft="-5dp"
+        android:layout_marginTop="8dp"
+        android:text="Days:"
+        android:textSize="30dp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/dayNumber"
+        app:layout_constraintBottom_toBottomOf="@+id/dayNumber"
+        app:layout_constraintStart_toStartOf="@+id/verticalFirst"
+        app:layout_constraintTop_toTopOf="@+id/dayNumber" />
+
+    <EditText
+        android:id="@+id/dayNumber"
+        android:layout_width="0dp"
+        android:layout_height="45dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:ems="10"
+        android:inputType="number"
+        android:text="0"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@+id/horizontalSecond"
+        app:layout_constraintEnd_toStartOf="@+id/linearLayout3"
+        app:layout_constraintStart_toEndOf="@+id/textView2" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/horizontalSecond"
+        app:layout_constraintEnd_toStartOf="@+id/verticalSecond"
+        app:layout_constraintTop_toBottomOf="@+id/currencyTxt">
+
+
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Cost for one person is"
+        android:textAlignment="center"
+        android:textSize="25dp"
+        app:layout_constraintEnd_toStartOf="@+id/verticalSecond"
+        app:layout_constraintStart_toStartOf="@+id/verticalFirst"
+        app:layout_constraintTop_toTopOf="@+id/horizontalSecond" />
+
+    <TextView
+        android:id="@+id/costsTxt"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:gravity="center"
+        android:text="0 NOK"
+        android:textAlignment="center"
+        android:textSize="40dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/verticalSecond"
+        app:layout_constraintStart_toStartOf="@+id/verticalFirst"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <LinearLayout
+        android:id="@+id/detailsLayout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/horizontalFirst"
+        app:layout_constraintLeft_toRightOf="@+id/verticalFirst"
+        app:layout_constraintRight_toLeftOf="@+id/verticalSecond"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/flagImg"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2" />
+
+        <TextView
+            android:id="@+id/cityTxt"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:textAlignment="center" />
+
+        <TextView
+            android:id="@+id/hotelTxt"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:textAlignment="center" />
+    </LinearLayout>
+
+    <android.support.constraint.Guideline
+        android:id="@+id/verticalFirst"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.15" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/verticalSecond"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.8" />
+
+</android.support.constraint.ConstraintLayout>
